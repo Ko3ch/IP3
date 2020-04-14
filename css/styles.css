@@ -1,0 +1,20 @@
+body {
+    font-family: 'Gotu', sans-serif;
+}
+.jumbotron {
+    background-image: url(//assets/backgrounds/h_img.jpg);
+}
+#img1{
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+#img2 {
+    padding-top: 100px;
+}
+#jumbotron {
+    background-image: url(../assets/backgrounds/h_img.jpg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
