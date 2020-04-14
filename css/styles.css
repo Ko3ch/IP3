@@ -1,5 +1,6 @@
 body {
-    font-family: 'Gotu', sans-serif;
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 20px;
 }
 .jumbotron {
     background-image: url(//assets/backgrounds/h_img.jpg);
@@ -7,9 +8,11 @@ body {
 #img1{
     padding-top: 90px;
     padding-bottom: 50px;
+    cursor: pointer;
 }
 #img2 {
     padding-top: 100px;
+    cursor: pointer;
 }
 #jumbotron {
     background-image: url(../assets/backgrounds/h_img.jpg);
