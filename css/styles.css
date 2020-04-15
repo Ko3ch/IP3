@@ -34,6 +34,27 @@ body {
     height: 180px;
     cursor: pointer;
 }
+.img-wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color:black;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+.img-wrap:hover .text {
+    visibility: visible;
+    opacity: 1;
+}
 form {
     background-image: url(../assets/backgrounds/c_image.jpg);
     background-size: cover;
@@ -51,6 +72,13 @@ textarea {
 ::placeholder {
     color: white;
 }
+button {
+    color: white;
+    background-color: inherit;
+}
 .social {
     cursor: pointer;
+}
+#hidden {
+    display: none;
 }
