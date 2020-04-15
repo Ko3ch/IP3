@@ -29,6 +29,15 @@ body {
 #whatwedo {
     padding-bottom: 40px;
 }
+.devInfo {
+    display: none;
+}
+.designInfo {
+    display: none;
+}
+.managementInfo {
+    display: none;
+}
 .portfolioImg {
     width: 250px;
     height: 180px;
@@ -80,5 +89,8 @@ button {
     cursor: pointer;
 }
 #hidden {
+    display: none;
+}
+#design #development #management {
     display: none;
 }
