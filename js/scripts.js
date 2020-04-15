@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    
     $(".design").click(function(){
         $(".designInfo").slideToggle();
     });
