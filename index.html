@@ -6,6 +6,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">    
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Delani</title>
 </head>
 <body>
@@ -38,6 +40,9 @@
         <div class="row">
             <div class="container d-flex justify-content-around">
                 <div class="col-md-4">
+                    <div class="overlay">
+
+                    </div>
                     <img src="assets/services_icons/design_icon.png" alt="design">
                     <p>DESIGN</p>
                 </div>
@@ -55,16 +60,56 @@
     <h2 class="text-center">PORTFOLIO</h2>
     <div class="row">
         <div class="container d-flex justify-content-around mt-3 p-2">
-            <img class="portfolioImg img-fluid" src="assets/portfolio/work1.jpg" alt="work1">
-            <img class="portfolioImg img-fluid" src="assets/portfolio/work2.jpg" alt="work2">
-            <img class="portfolioImg img-fluid" src="assets/portfolio/work3.jpg" alt="work3">
-            <img class="portfolioImg img-fluid" src="assets/portfolio/work4.jpg" alt="work4">
+            <div class="container img-wrap">
+                <img class="portfolioImg img-fluid" src="assets/portfolio/work1.jpg" alt="work1">
+                <div class="overlay">
+                    <div class="text">Work 1</div>
+                </div>
+            </div>
+            <div class="container img-wrap">
+                <img class="portfolioImg img-fluid" src="assets/portfolio/work2.jpg" alt="work2">
+                <div class="overlay">
+                    <div class="text">Work 2</div>
+                </div>    
+            </div>
+            <div class="container img-wrap">
+                <img class="portfolioImg img-fluid" src="assets/portfolio/work3.jpg" alt="work3">
+                <div class="overlay">
+                    <div class="text">Work 3</div>
+                </div>    
+            </div>
+            <div class="container img-wrap">
+                <img class="portfolioImg img-fluid" src="assets/portfolio/work4.jpg" alt="work4">
+                <div class="overlay">
+                    <div class="text">Work 4</div>
+                </div>    
+            </div>
         </div>
         <div class="container d-flex justify-content-around mt-5">
-            <img class="portfolioImg img-fluid" src="assets/portfolio/work5.jpg" alt="work5">
-            <img class="portfolioImg img-fluid" src="assets/portfolio/work6.jpg" alt="work6">
-            <img class="portfolioImg img-fluid" src="assets/portfolio/work7.jpg" alt="work7">
-            <img class="portfolioImg img-fluid" src="assets/portfolio/work8.jpg" alt="work8">
+            <div class="container img-wrap">
+                <img class="portfolioImg img-fluid" src="assets/portfolio/work5.jpg" alt="work5">
+                <div class="overlay">
+                    <div class="text">Work 5</div>
+                </div>    
+            </div>
+            <div class="container img-wrap">
+                <img class="portfolioImg img-fluid" src="assets/portfolio/work6.jpg" alt="work6">
+                <div class="overlay">
+                    <div class="text">Work 6</div>
+                </div>    
+            </div>
+            <div class="container img-wrap">
+                <img class="portfolioImg img-fluid" src="assets/portfolio/work7.jpg" alt="work7">
+                <div class="overlay">
+                    <div class="text">Work 7</div>
+                </div>    
+            </div>
+            <div class="container img-wrap">
+                <img class="portfolioImg img-fluid" src="assets/portfolio/work8.jpg" alt="work8">
+                <div class="overlay">
+                    <div class="text">Work 8</div>
+                </div>    
+            </div>   
         </div>
     </div>
 </main>
@@ -74,32 +119,35 @@
             <div class="form-row">
                 <div class="container d-flex justify-content-center pt-2">
                     <div class="col-md-6">
-                        <input type="text" class="form-control" placeholder="Name...">
+                        <input type="text" class="form-control" placeholder="Name..." id="name">
                     </div>
                     <div class="col-md-6">
-                        <input type="email" class="form-control" placeholder="Email...">
+                        <input type="email" class="form-control" placeholder="Email..." id="email">
                     </div>
                 </div>
              </div>
         <div class="row">
             <div class="col-md-12 d-flex justify-content-center ">
-                <textarea class="mt-5 mb-5" rows="6" cols="100" placeholder="Your message here..."></textarea>
+                <textarea id="message" class="mt-5 mb-5" rows="6" cols="100" placeholder="Your message here..."></textarea>
             </div>
         </div>
+        <button class="mb-3" id="submit" type="submit">Submit</button>
+        <p id="hidden"><span id="theName"></span>, your message has been received. Thank you!</p>
+        <p id="errorMessage"></p>
     </form>
 </div>
 <div class="container-fluid text-center p-5">
     <footer>
-        <img class="social pr-4" src="assets/social_icons/you_tube.png" alt="you_tube">
-        <img class="social pr-4" src="assets/social_icons/twitter.png" alt="">
-        <img class="social pr-4" src="assets/social_icons/pinterest.png" alt="pinterest">
-        <img class="social pr-4" src="assets/social_icons/g_plus.png" alt="G+">
-        <img class="social pr-4" src="assets/social_icons/skype.png" alt="skype">
-        <img class="social pr-4" src="assets/social_icons/flickr.png" alt="flickr">
-        <img class="social pr-4" src="assets/social_icons/stumble_upon.png" alt="stumble_upon">
-        <img class="social pr-4" src="assets/social_icons/facebook.png" alt="facebook">
-        <img class="social pr-4" src="assets/social_icons/dribble.png" alt="dribble">
-        <img class="social pr-4" src="assets/social_icons/behance.png" alt="behance">
+        <a href="#"><img class="social pr-4" src="assets/social_icons/you_tube.png" alt="you_tube"></a>
+        <a href="#"><img class="social pr-4" src="assets/social_icons/twitter.png" alt=""></a>
+        <a href="#"><img class="social pr-4" src="assets/social_icons/pinterest.png" alt="pinterest"></a>
+        <a href="#"><img class="social pr-4" src="assets/social_icons/g_plus.png" alt="G+"></a>
+        <a href="#"><img class="social pr-4" src="assets/social_icons/skype.png" alt="skype"></a>
+        <a href="#"><img class="social pr-4" src="assets/social_icons/flickr.png" alt="flickr"></a>
+        <a href="#"><img class="social pr-4" src="assets/social_icons/stumble_upon.png" alt="stumble_upon"></a>
+        <a href="#"><img class="social pr-4" src="assets/social_icons/facebook.png" alt="facebook"></a>
+        <a href="#"><img class="social pr-4" src="assets/social_icons/dribble.png" alt="dribble"></a>
+        <a href="#"><img class="social pr-4" src="assets/social_icons/behance.png" alt="behance"></a>
         <p class="pt-4">DELANI</p>
         <p>2019</p>
     </footer>   
