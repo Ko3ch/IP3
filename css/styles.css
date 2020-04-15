@@ -17,7 +17,40 @@ body {
 #jumbotron {
     background-image: url(../assets/backgrounds/h_img.jpg);
     color: white;
-    background-repeat: no-repeat;
     background-size: cover;
-
+}
+#jumbotron-2 {
+    background-image: url(../assets/backgrounds/s_image.jpg);
+    background-size: cover;
+    color: white;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+#whatwedo {
+    padding-bottom: 40px;
+}
+.portfolioImg {
+    width: 250px;
+    height: 180px;
+    cursor: pointer;
+}
+form {
+    background-image: url(../assets/backgrounds/c_image.jpg);
+    background-size: cover;
+    color: white;
+}
+.form-control {
+    background-color: inherit;
+}
+.form-control::placeholder {
+    color: white;
+}
+textarea {
+    background-color: inherit;
+}
+::placeholder {
+    color: white;
+}
+.social {
+    cursor: pointer;
 }
