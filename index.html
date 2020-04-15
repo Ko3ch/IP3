@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/jquery-3.4.1.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <title>Delani</title>
 </head>
@@ -40,19 +43,31 @@
         <div class="row">
             <div class="container d-flex justify-content-around">
                 <div class="col-md-4">
-                    <div class="overlay">
-
+                    <img class="design" src="assets/services_icons/design_icon.png" alt="design">
+                    <p class="design">DESIGN</p>
+                    <div class="hiddenInfo text-center designInfo">
+                        <h3>DESIGN</h3>
+                        <p>Our design practise offers a full range of services including brand strategy, interaction and visual design and user experience testing</p>
+                        <p>Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
                     </div>
-                    <img src="assets/services_icons/design_icon.png" alt="design">
-                    <p>DESIGN</p>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/services_icons/dev_icon.png" alt="development">
-                    <p>DEVELOPMENT</p>
+                    <img class="dev" id="development" src="assets/services_icons/dev_icon.png" alt="development">
+                    <p class="dev">DEVELOPMENT</p>
+                    <div class="hiddenInfo text-center devInfo">
+                        <h3>DEVELOPMENT</h3>
+                        <p>All engineers are fluent in the latest enterprise, mobile and web technologies.</p>
+                        <p>They collaborate with your team to write and improve code on a daily basis, using proven practises such as test-driven development and pair programming.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="assets/services_icons/product_icon.png" alt="product-management">
-                    <p>PRODUCT MANAGEMENT</p>
+                    <img class="product" id="management" src="assets/services_icons/product_icon.png" alt="product-management">
+                    <p class="product">PRODUCT MANAGEMENT</p>
+                    <div class="hiddenInfo text-center managementInfo">
+                        <h3>PRODUCT-MANAGEMENT</h3>
+                        <p>Plannig and development is interactive. Because we are constantly coding and testing the products we build are always ready to go live.</p>
+                        <p>The iterative process allows for changes as business requirements evolve.</p>
+                    </div>
                 </div>
             </div>           
         </div>       
